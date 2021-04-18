@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+header.topbar{
+    background: grey;
+    color: white;
+    padding: 0.25rem 0;
+}
+
+.auth a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth{
+    display: flex;
+}
+
+.auth img{
+    margin-right: 0.23rem;
+}
+
+.divider{
+    padding: 0 1rem;
+}
+
+.top{
+    padding: 0.5rem 0;
+}
+
+.icons a{
+    margin-right: 0.6rem;
+}
+
+.container .contact,.branding,.time{
+    display: flex;
+    align-items: center;
+}
+
+.time img{
+    margin-right: 0.1rem;
+}
+.contact img{
+    margin-right: 0.1rem;
+}
+
+h5{
+    margin-bottom: 0.25rem;
+}
+
+h6{
+    letter-spacing: 0.055rem;
+}
+
+.navbar .container{
+    justify-content: center;
+}
+
+.navbar .container a{
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    transition: all .3s ease;
+}
+.navbar .container a.active{
+    background: #eebf00;
+    color: white;
+}
+
+.navbar .container a:hover{
+    background: #eebf00;
+    color: white;
+}
+
+.magic-shadow{
+    position: relative;
+    background: white;
+}
+
+.magic-shadow::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 69px;
+    position: absolute;
+    background-image: url(./icons/shadow.svg);
+    bottom: -22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero{
+    height: 400px;
+    background-image: url(images/hero.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero .container{
+    position: relative;
+}
+
+.hero>div{
+    margin-left: auto;
+}
+.welcome{
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: -30px;
+}
+.btn button{
+    border-radius: 4px;
+    line-height: 0.8;
+    cursor: pointer;
+    border: none;
+    margin-top: 0.5rem;
+    width: 6rem;
+    padding: 0.5rem 0.5rem;
+    background-color: #eebf00;
+}
+.para{
+    margin-top: 2rem;
+    
+}
+
+.btn button:hover{
+    background-color: black;
+    color: white;
+}
+#con{                       /*utility class*/
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    
+}
+
+h1 span{
+    color: #eebf00;
+}
+
+.hero-img{
+    position: absolute;
+    top: 40px;
+    right: 220px;
+}
+
+.hero-img img{
+    width: 250px;
+    height: 240px;
+}
+
+.top_products{
+    display: flex;
+    justify-content: space-evenly;
+    height: 220px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.top_heading{
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.top_heading::after{
+    content: "";
+    display: block;
+    width: 28%;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url(./icons/hr.svg);
+}
+.top_products img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.box1,.box2,.box3{
+   background-color: #c3a837; 
+   width: 160px;
+   border-radius: 3%;
+}
+
+ .im1,.im2,.im3{
+     display: flex;
+     justify-content: center;
+ }
+ .top_products h3{
+     text-align: center;
+     padding-top: 0.6rem;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     margin-bottom: 0.3rem;
+ }
+ .cart_btn{
+     display: flex;
+     justify-content: center;
+ }
+ .cart_btn a{
+     text-decoration: none;
+     background-color: rgb(56, 55, 55);
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: white;
+     padding: 0.2rem;
+     border-radius: 3%;
+ }
+ .cart_btn a:hover{
+     
+     background-color: #eebf00;
+     color: black;
+ }
+
+
+.main_head{
+    margin-top: 5.5rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main_head::after{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-image: url(./icons/hr.svg);
+}
+
+.meal_image img{
+    width: 200px;
+    height: 150px;
+    margin-right: 2rem;
+}
+.meal_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.meal_box{
+    
+    width: 80%;
+    height: 330px;
+    margin: 0 auto;
+}
+
+.meal_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.about_meal{
+    margin-right: 4rem;
+}
+.about_meal h3,h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.meal_read{
+    text-decoration: none;
+    color: white;
+    background-color: #eebf00;
+    border-radius: 5%;
+    padding: 0.3rem;
+}
+.meal_read:hover{
+    background-color: black;
+    color: white;
+}
+
+.meal_read_div{
+    margin-top: 0.7rem;
+}
+
+
+.main_head1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main_head1::after{
+    content: "";
+    display: block;
+    width: 27%;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-image: url(./icons/hr.svg);
+}
+.service_box{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.service_card{
+    background-color: rgb(233, 233, 233);
+    width: 31%;
+    border-radius: 2%;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    position: relative;
+}
+
+.serv_icon{
+    position: absolute;
+    top: -45px;
+    left: 33.33%;
+
+}
+.free{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+.free:hover{
+    background-color: black;
+    color: white;
+}
+.readmore{
+    margin-top: 1rem;
+    
+}
+/*our services*/
+.deals{
+    background:linear-gradient(
+        rgba(35, 43, 56, 0.9),
+        rgba(35, 43, 56, 0.9)
+    ),url(./images/food-table.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: 286px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.deal_head{
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1.5rem;
+}
+.timer div{
+    background-color: #eebf00;
+    margin-right: 3rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
+.timer_content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.timer_content span{
+    color: white;
+    font-size: 1.7rem;
+}
+
+.contact_us{
+    display: flex;
+    height: 279px;
+}
+
+.left{
+    
+    width: 50%;
+}
+.info h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 3rem;
+}
+.info h2::after{
+    content: "";
+    display: block;
+    width: 48%;
+    height: 30px;
+    margin: 0 auto;
+    margin-left: 10rem;
+    margin-bottom: 0.2rem;
+    background-image: url(./icons/hr.svg);
+}
+.contact_info{
+    margin: 0 auto;
+}
+.info_div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.info_div img{
+    margin-right: 1rem;
+}
+.second_logo{
+    margin-left: -0.7rem;
+}
+.third_logo{
+    margin-left: 4rem;
+}
+
+
+.right{
+    
+    display: flex;
+}
+iframe{
+    padding: 2rem;
+}
